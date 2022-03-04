@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu 
+        {
+            background: white;
+            width: 300px;
+            height: 300px;
+            box-shadow: rgba(10,10,0,0.5) 1px 1px 4px 6px;
+            margin-left: 100px;
+            margin-top: 100px;
+        
+        }
+        .menu ul
+        {
+            padding-top: 10px;
+            padding-right: 10px;
+            
+        }
+        .menu ul li
+        {
+           
+            list-style-type: none;
+            margin: 5px;
+            line-height: 1.3 em;
+            border: 2px dashed #ffffff;
+            border-radius: 10px ;
+            
+            text-shadow: -1px -1px rgb(148, 57, 57);
+            font-weight: normal;
+            text-align: center;
+            padding: 5px;
+            width: 80px;
+            font-size: 14px;
+            font-weight: bold;
+            background: #0d90df;
+            position: relative;
+            box-shadow: 0 0 0 4px #0d90df , 2px 1px 6px 4px  rgba(10,10,0,0.5);
+        }
+        .menu ul li a 
+        {
+            text-decoration: none;
+  
+        }
+        .menu ul li ul 
+        {
+            display: none;
+        }
+        .menu ul li:hover ul 
+        {
+            display: block;
+            position: absolute;
+            left: 53px;
+            top: -16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <ul class="c1">
+            <li><td><a href="#">Home</a></td></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Products</a>
+                <ul class="c2">
+                    <li><a href="#">Photography</a></li>
+                    <li><a href="#">Web & User Iterface Design</a></li>
+                    <li><a href="#">IIIustration</a></li>
+                </ul>
+            </li>
+           
+            <li><a href="#">Conrtact</a></li>
+        </ul>
+    </div>
+</body>
+</html>
